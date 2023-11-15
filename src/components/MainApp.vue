@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <section>
+    <section class="section-1">
         <SectionMain1/>
     </section>
 </template>

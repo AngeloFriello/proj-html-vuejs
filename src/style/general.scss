@@ -13,7 +13,17 @@ li,ul{
 
 a{
     text-decoration: none;
-    color: currentColor;
+}
+
+.button_green{
+    padding: 20px;
+    background-color: #20AD96;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin: 30px 0;
 }
 
 //utility
@@ -44,13 +54,15 @@ a{
 
 header{
 
+    box-shadow: 4px 4px 4px #00000034;
+
     .logo{
         padding: 10px 150px 10px 0px ;
         width: 400px;
     }
     .nav-bar{
 
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
         .nav-bar__item{
@@ -81,3 +93,53 @@ header{
 }
 
 // MAIN
+
+main{
+
+    .section-1{
+
+        .row{
+            padding-top: 60px ;
+        }
+
+        img{
+            width: 670px;
+            border-radius: 50%;
+            object-fit: 1;
+        }
+
+        .col-5{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+
+            h2{
+                font-size: 50px;
+                color: #3F3A64;
+            }
+
+            p{
+                padding: 15px 0 ;
+                font-size: 22px;
+                color: #696969;
+            }
+
+            .icon_download{
+                font-size: 20px;
+                padding: 0 20px;
+            }
+
+            .link_sample{
+                color: #20AD96;
+                font-weight: 700;
+            }
+
+        }
+
+        .col-7{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}

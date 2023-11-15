@@ -7,8 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCircleUser,faChevronDown,faMagnifyingGlass)
+library.add(faCircleUser,faChevronDown,faMagnifyingGlass,faDownload,faArrowRight)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
