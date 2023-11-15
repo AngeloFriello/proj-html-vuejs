@@ -20,6 +20,9 @@
     <section class="section-1">
         <SectionMain1/>
     </section>
+    <section>
+        
+    </section>
 </template>
 
 <style lang="scss">
