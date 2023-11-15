@@ -31,6 +31,15 @@ a{
     margin: 0 auto;
 }
 
+.col-5{
+    width: calc((100% / 12) * 5);
+}
+
+.col-7{
+    width: calc((100% / 12) * 7);
+}
+
+
 //header
 
 header{
@@ -46,12 +55,29 @@ header{
 
         .nav-bar__item{
             padding: 20px;
+            color: #646464;
+            font-weight: 700;
         }
 
         .icon_chevron{
             font-size: 10px;
             padding-left: 5px;
         }
+        
+        .icon_search{
+            color: #20AD96;
+        }
+
+        .search{
+            height: 40px;
+            background-color: #F5F5F5;
+            border: none;
+            outline: none;
+            padding: 0 10px;
+            border-radius: 7px;
+        }
     }
     
 }
+
+// MAIN

@@ -1,5 +1,18 @@
 <script>
 
+    export default{
+        components:{
+
+        },
+		data(){
+			return{
+
+			}
+		},
+		methods:{
+
+		},
+    }
 </script>
 
 <template>
@@ -16,7 +29,11 @@
             <li class="nav-bar__item">Shop<font-awesome-icon :icon="['fas', 'chevron-down']" class="icon_chevron" /></li>
             <li class="nav-bar__item"><font-awesome-icon :icon="['far', 'circle-user']" /></li>
         </ul>
-        <input type="search" placeholder="search...">
+        <form action="" class="search">
+            <input type="search" placeholder="Search..." class="search">
+            <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="icon_search" />
+        </form>
+        
     </div>
 </template>
 

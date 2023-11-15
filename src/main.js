@@ -6,8 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCircleUser,faChevronDown)
+library.add(faCircleUser,faChevronDown,faMagnifyingGlass)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
