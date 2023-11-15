@@ -1,9 +1,11 @@
 <script>
     import SectionMain1 from './Sections/SectionMain-1.vue';
+    import SectionMain2 from './Sections/SectionMain-2.vue';
 
     export default{
         components:{
             SectionMain1,
+            SectionMain2,
         },
 		data(){
 			return{
@@ -20,8 +22,8 @@
     <section class="section-1">
         <SectionMain1/>
     </section>
-    <section>
-        
+    <section class="section-2">
+        <SectionMain2/>
     </section>
 </template>
 

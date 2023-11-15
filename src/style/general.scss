@@ -32,6 +32,10 @@ a{
     display: flex;
 }
 
+.f-wrap{
+    flex-wrap: wrap;
+}
+
 .none{
     display: none;
 }
@@ -47,6 +51,14 @@ a{
 
 .col-7{
     width: calc((100% / 12) * 7);
+}
+
+.col-6{
+    width: calc((100% / 12) * 6);
+}
+
+.col-12{
+    width: 100%;
 }
 
 .p-relative{
@@ -188,6 +200,37 @@ main{
                 left: 70px;
                 top: 340px;
                 height: 160px;
+            }
+        }
+    }
+
+    .section-2{
+
+        background-color: #f5f7fa;
+
+        .row{
+
+        }
+        .col-12{
+            display: flex;
+            flex-direction: column;            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-6{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .card{
+            img{
+                max-width: 200px;
+                object-fit: cover;
+                aspect-ratio: 1;
+                border-radius: 50%;
             }
         }
     }
