@@ -91,6 +91,21 @@ a{
 .z-2{
     z-index: 2;
 }
+
+// TEXT FONT
+
+.small_text{
+    padding: 15px 0 ;
+    font-size: 15px;
+    color: #8c89a2;
+}
+
+.mid_text{
+    padding: 15px 0 ;
+    font-size: 20px;
+    color: #8c89a2;
+}
+
 //header
 
 header{
@@ -165,12 +180,6 @@ main{
                 color: #3F3A64;
             }
 
-            p{
-                padding: 15px 0 ;
-                font-size: 22px;
-                color: #696969;
-            }
-
             .icon_download{
                 font-size: 20px;
                 padding: 0 20px;
@@ -220,12 +229,6 @@ main{
             flex-direction: column;            
             justify-content: center;
             align-items: center;
-
-            p{
-                margin: 20px 0;
-                font-size: 15px;
-                color: #646464;
-            }
 
             h2{
                 font-size: 35px;
@@ -283,11 +286,6 @@ main{
             text-align: center;
             padding: 100px;
 
-            p{
-                color:#969696 ;
-                font-weight: 700;
-            }
-
             h2{
                 color:#3F3A64;
                 font-weight: 300;
@@ -320,5 +318,146 @@ main{
             }
         }
         
+
+        .col-7{
+
+            margin-top: 100px;
+
+            .img_background{
+                width: 100%;
+                left: 0;
+                top: 0;
+                position:sticky;
+                border-radius: 10px;
+                z-index: 3;
+            }
+
+            .logo_youtube{
+                left: 50%;
+                top: 50%;
+                translate: -50% -50%;
+                z-index: 3;
+            }
+
+            .img_right{
+                bottom: -80px;
+                right: -20px;
+                z-index: 1;
+            }
+
+            .img_left{
+                top:65px;
+                left: -100px;
+                z-index: 2;
+            }
+
+            .img_cloud{
+                top:-120px;
+                left: -80px;
+                z-index: 1;
+                filter: invert(100%) sepia(27%) saturate(3718%) hue-rotate(313deg) brightness(96%) contrast(86%);
+            }
+        }
+
+        .col-5{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            padding:100px ;
+
+            h3{
+                font-size: 60px;
+                color: #3F3A64;
+                a{
+                    font-weight: 300;
+                    color: #20AD96;
+                }
+            }
+
+            .small_text{
+                font-weight: 700;
+                a{
+                    color: #3F3A64;
+                }
+            }
+
+            .text-main{
+                padding: 30px 0; 
+                font-size: 18px;
+                line-height: 1.5;
+                color: #696969;
+            }
+
+            a{
+                color: #20AD96;
+                font-weight: 700;
+            }
+        }
     }
+
+    .section-4{
+
+        background-color: #f8f8f8;
+        margin-top: 100px;
+
+        .active{
+            background-color: white;
+            border-radius: 10px
+        }
+
+        .container-fluid{
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        .col-12{
+
+            h3{
+                color: #3F3A64;
+                font-size: 40px;
+                padding-bottom: 50px;
+            }
+
+            a{
+                color: #20AD96;
+            }
+        }
+        
+        .col-4{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+
+            h4{
+                color:#3F3A64;
+                font-size: 25px;
+                line-height: 1.5;
+            }
+
+            p{
+                color: #696969;
+                line-height: 1.5;
+                font-size: 17px;
+                padding: 10px 0;
+            }
+
+            .card{
+                padding: 20px 0;
+                display: flex;
+
+                img{
+                    width: 80px;
+                    aspect-ratio: 1;
+                    border-radius: 50%
+                }
+            }
+            
+        }
+    }
+
 }

@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row flex f-wrap">
             <div class="col-12 ">
-                <p>SIMULATED TO LEARN?</p>
+                <p class="small_text">SIMULATED TO LEARN?</p>
                 <h2>Featured Online Courses</h2>
             </div>
             <div class="col-6">
