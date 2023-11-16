@@ -43,7 +43,9 @@ a{
     max-width: 1500px;
     margin: 0 auto;
 }
-
+.col-3{
+    width: calc((100% / 12) * 3);
+}
 .col-4{
     width: calc((100% / 12) * 4);
 }
@@ -91,6 +93,11 @@ a{
 .z-2{
     z-index: 2;
 }
+
+.c_green{
+    color: #20AD96;
+}
+
 
 // TEXT FONT
 
@@ -158,6 +165,10 @@ header{
 
 main{
 
+
+// SECTION 1
+
+
     .section-1{
 
         .list-logs{
@@ -213,8 +224,17 @@ main{
                 top: 340px;
                 height: 160px;
             }
+
+            .img_relative-right{
+                top: 170px;
+                right: -120px;
+            }
         }
     }
+
+
+// SECTION 2
+
 
     .section-2{
 
@@ -279,6 +299,10 @@ main{
             }
         }
     }
+
+
+// SECTION 3
+
 
     .section-3{
 
@@ -398,14 +422,20 @@ main{
         }
     }
 
+
+// SECTION 4
+
+
     .section-4{
 
         background-color: #f8f8f8;
         margin-top: 100px;
+        display: flex;
 
         .active{
             background-color: white;
-            border-radius: 10px
+            border-radius: 10px;
+            opacity: 0.5;
         }
 
         .container-fluid{
@@ -413,7 +443,16 @@ main{
             margin: 0 auto;
         }
 
+        h4{
+            color:#3F3A64;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+
         .col-12{
+            padding-top: 100px ;
+                text-align: center;
 
             h3{
                 color: #3F3A64;
@@ -427,17 +466,15 @@ main{
         }
         
         .col-4{
+            background-color: white;
             padding: 40px;
+            margin: 40px;
             display: flex;
             justify-content: center;
             align-items: start;
             flex-direction: column;
 
-            h4{
-                color:#3F3A64;
-                font-size: 25px;
-                line-height: 1.5;
-            }
+            
 
             p{
                 color: #696969;
@@ -447,7 +484,7 @@ main{
             }
 
             .card{
-                padding: 20px 0;
+                padding: 20px 0px;
                 display: flex;
 
                 img{
@@ -455,9 +492,52 @@ main{
                     aspect-ratio: 1;
                     border-radius: 50%
                 }
+
+                h5{
+                    font-size: 18px;
+                    color: #3F3A64;
+                    padding-left: 20px;
+                }
+                p{
+                    padding-left: 20px;
+                }
             }
             
         }
+
+        .col-3{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .point{
+                width: 8px;
+                height: 8px;
+                background-color: #3F3A64;
+                border-radius: 50%;
+                margin: 10px;
+                opacity: 0.5;
+            }
+    
+            .point-active{
+                opacity: 1;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        .img_left{
+            top: 50%;
+            left: 330px;
+        }
+
+        .img_right{
+            top: 50%;
+            right: 330px;
+        }
+
+        
     }
 
 }

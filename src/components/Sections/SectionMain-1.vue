@@ -16,6 +16,7 @@
                 <img src="../../../public/maxcoach-shape-07.png" alt="" class="p-absolute b-0 r-100 z-1">
                 <img src="../../../public/maxcoach-shape-08.png" alt="" class="p-absolute img_relative-top">
                 <img src="../../../public/maxcoach-shape-08.png" alt="" class="p-absolute img_relative-bot">
+                <img src="../../../public/maxcoach-shape-02.png" alt="" class="p-absolute img_relative-right">
             </div>
         </div>
         <div>
