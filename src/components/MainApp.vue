@@ -5,10 +5,16 @@
     import SectionMain4 from './Sections/SectionMain-4.vue';
     import SectionMain5 from './Sections/SectionMain-5.vue';
     import SectionMain6 from './Sections/SectionMain-6.vue';
+    import SectionMain7 from './Sections/SectionMain-7.vue';
 
     export default{
         props:{
-
+            simulatedToLeard:{
+                price:[''],
+                name:[''],
+                lessons:'',
+                Studends:'',
+            }
         },
         components:{
             SectionMain1,
@@ -17,13 +23,11 @@
             SectionMain4,
             SectionMain5,
             SectionMain6,
+            SectionMain7,
         },
 		data(){
 			return{
-                cucina:{
-                    pasta:'10 min',
-                    latte:'1 litro'
-                },
+              
 			}
 		},
 		methods:{
@@ -50,6 +54,9 @@
     </section>
     <section class="section-6">
         <SectionMain6/>
+    </section>
+    <section class="section-7">
+        <SectionMain7/>
     </section>
 </template>
 

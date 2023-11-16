@@ -15,15 +15,6 @@ a{
     text-decoration: none;
 }
 
-.button_green{
-    padding: 20px 50px;
-    background-color: #20AD96;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    color: white;
-    margin: 30px 0;
-}
 
 //utility
 
@@ -42,6 +33,9 @@ a{
 .container{
     max-width: 1500px;
     margin: 0 auto;
+}
+.col-2{
+    width: calc((100% / 12) * 2);
 }
 .col-3{
     width: calc((100% / 12) * 3);
@@ -102,6 +96,19 @@ a{
     font-weight: 300;
 }
 
+.button_green{
+    padding: 20px 50px;
+    background-color: #20AD96;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    margin: 30px 0;
+}
+
+.button_green:hover{
+    background-color: #3F3A64;
+}
 
 // TEXT FONT
 
@@ -627,9 +634,84 @@ main{
                     }
                 }
             }
-        }   
+        }
     }
 
+    .section-7{
+            
+        text-align: center;
+        padding-bottom: 100px;
+
+        .col-12{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                color: #3F3A64;
+                font-size: 35px;
+                padding: 70px 0 30px 0;
+            }
+
+            p{
+                line-height: 1.5;
+                color: #696969;
+                font-size: 17px;
+            }
+
+            .input-email{
+                border: none;
+                outline: none;
+                height: 65px;
+                width: 500px;
+                background-color:#f5f1ed;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+            .img_right{
+                right: 0px;
+                top: 200px;
+            }
+
+            .img_top{
+                right: 20px;
+                rotate: 30deg;
+            }
+        }
+    }
     
 
 }
+
+
+//  FOOTER
+
+
+footer{
+    padding: 100px;
+    background-color: #f8f8f8;
+
+    .row{
+        display: flex;
+    }
+
+    li{
+        padding: 10px 0;
+        color: #696969;
+        font-weight: 700;
+        
+    }
+    .title-list{
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .li-brand{
+        padding-right: 40px;
+        font-size: 30px;
+        color: rgb(197, 197, 197);
+    }
+}   

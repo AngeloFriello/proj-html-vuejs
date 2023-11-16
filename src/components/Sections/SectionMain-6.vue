@@ -96,8 +96,3 @@
     @use '../../style/partials/variable.scss';
     @use '../../style/partials/mixin.scss';
 </style>
-
-<!-- </li>
-</li>
-</li>
-</li> -->
