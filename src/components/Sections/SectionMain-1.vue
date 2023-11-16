@@ -1,5 +1,11 @@
 <script>
-
+    export default{
+        props:{
+            filippo:{
+                type:Object,
+            }
+        }
+    }
 </script>
 
 <template>

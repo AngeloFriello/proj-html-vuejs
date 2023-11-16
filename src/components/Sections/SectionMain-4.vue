@@ -65,7 +65,7 @@
             <div class="col-12 p-relative">
                 <img src="../../../public/maxcoach-shape-01.png" alt="" class="p-absolute img_left">
                 <img src="../../../public/maxcoach-shape-02.png" alt="" class="p-absolute img_right">
-                <h4>Start today for getting <a href="" class="c_green">Online Certification</a></h4>
+                <h4>Start today for getting <a href="" class="c_green f-w_light">Online Certification</a></h4>
                 <h3>You can be your own guiding star with our help!</h3>
                 <button class="button_green">Get started now</button>
             </div>

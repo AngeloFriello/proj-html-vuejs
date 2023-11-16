@@ -98,6 +98,10 @@ a{
     color: #20AD96;
 }
 
+.f-w_light{
+    font-weight: 300;
+}
+
 
 // TEXT FONT
 
@@ -430,6 +434,7 @@ main{
 
         background-color: #f8f8f8;
         margin-top: 100px;
+        padding-bottom: 100px;
         display: flex;
 
         .active{
@@ -539,5 +544,92 @@ main{
 
         
     }
+
+    .section-5{
+
+        .col-3{
+            height: 400px;
+            border-left: 1px solid rgba(211, 211, 211, 0.4);
+            border-right: 1px solid rgba(211, 211, 211, 0.4);
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .text-number{
+                color: #20AD96;
+                font-size: 60px;
+                font-weight: 900;
+                
+            }
+
+            h3{
+                color:#3F3A64;
+                font-size: 25px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .section-6{
+        background-color:   #f5f1ed;
+        padding-top: 150px;
+        padding-bottom: 100px;
+
+        .col-4{
+            display: flex;
+            flex-direction: column  ;
+
+            h4{
+                color: #3F3A64;
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+
+            .list_item{
+                color: #3F3A64;
+                font-size: 18px;
+                padding-bottom: 20px;
+                font-weight: 700;
+            }
+
+            .arrow-right{
+                padding-right: 20px;
+            }
+
+            .card{
+                padding: 20px;
+                
+                .card-body{
+                    background-color: white;
+                    border-radius: 10px;
+                }
+
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                .card-footer{
+                    padding: 30px;
+
+                    h3{
+                        color: #3F3A64;
+                        font-size: 25px;
+                        padding-bottom: 20px;
+                    }
+
+                    li{
+                        color: #696969;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }   
+    }
+
+    
 
 }
