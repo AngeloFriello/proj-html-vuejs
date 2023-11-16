@@ -26,28 +26,28 @@
             </div>
             <div class="col-6">
                 <ul>
-                    <li>{{ items.id }}</li>
-                    <li>{{ items.orario }}</li>
-                    <li>{{ items.email }}</li>
+                    <li class="hover-green">{{ items.id }}</li>
+                    <li class="hover-green">{{ items.orario }}</li>
+                    <li class="hover-green">{{ items.email }}</li>
                     <ul class="flex">
-                        <li class="li-brand"><font-awesome-icon :icon="['fab', 'square-facebook']" /></li>
-                        <li class="li-brand"><font-awesome-icon :icon="['fab', 'square-twitter']" /></li>
-                        <li class="li-brand"><font-awesome-icon :icon="['fab', 'square-instagram']" /></li>
-                        <li class="li-brand"><font-awesome-icon :icon="['fab', 'linkedin']" /></li>
+                        <li class="li-brand hover-green"><font-awesome-icon :icon="['fab', 'square-facebook']" /></li>
+                        <li class="li-brand hover-green"><font-awesome-icon :icon="['fab', 'square-twitter']" /></li>
+                        <li class="li-brand hover-green"><font-awesome-icon :icon="['fab', 'square-instagram']" /></li>
+                        <li class="li-brand hover-green"><font-awesome-icon :icon="['fab', 'linkedin']" /></li>
                     </ul>
                 </ul>
             </div>
             <div class="col-2">
                 
-                <li v-for="(item, i) in items.listFooterStarts">{{ item }}</li>
+                <li v-for="(item, i) in items.listFooterStarts" class="hover-green">{{ item }}</li>
             </div>
             <div class="col-2">
 
-                <li v-for="(item, i) in items.listFooterMids">{{ item }}</li>
+                <li v-for="(item, i) in items.listFooterMids" class="hover-green">{{ item }}</li>
             </div>
             <div class="col-2">
                 
-                <li v-for="(item, i) in items.listFooterEnds">{{ item }}</li>
+                <li v-for="(item, i) in items.listFooterEnds" class="hover-green">{{ item }}</li>
             </div>
         </div>
     </div>

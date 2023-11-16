@@ -170,7 +170,7 @@
 
 <template>
     <section class="section-1">
-        <SectionMain1  />
+        <SectionMain1 />
     </section>
     <section class="section-2">
         <SectionMain2 :items="simulatedToLeard"/>

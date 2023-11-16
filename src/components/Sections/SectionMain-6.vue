@@ -25,7 +25,7 @@
                         <div>
                             <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
                         </div> 
-                        <div>
+                        <div class="hover-green">
                             {{ item }}
                         </div>
                     </li>

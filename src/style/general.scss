@@ -18,6 +18,11 @@ a{
 
 //utility
 
+
+.hover-green:hover{
+    color: #20AD96 !important;
+}
+
 .flex{
     display: flex;
 }
@@ -109,6 +114,8 @@ a{
 .button_green:hover{
     background-color: #3F3A64;
 }
+
+
 
 // TEXT FONT
 
@@ -711,4 +718,5 @@ footer{
         font-size: 30px;
         color: rgb(197, 197, 197);
     }
-}   
+}  
+

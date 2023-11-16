@@ -23,7 +23,7 @@
                 </div>
                 <div class="card_info">
                     <p class="price">{{ item.price }}</p>
-                    <h3>{{item.name}}</h3>
+                    <h3 class="hover-green">{{item.name}}</h3>
                     <div class="flex">
                         <p><font-awesome-icon :icon="['far', 'file']" /> {{item.lessons}} lessons</p>
                         <p><font-awesome-icon :icon="['far', 'user']" /> {{ item.students }} Students</p>

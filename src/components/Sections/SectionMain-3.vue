@@ -25,7 +25,7 @@
                 <div>
                     <h3>{{item.title}}</h3>
                     <p>{{ item.text }}</p>
-                    <a href="">{{ item.link }} <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+                    <a href="" class="hover-green">{{ item.link }} <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
                 </div>
             </div>
 
