@@ -1,5 +1,12 @@
 <script>
-
+    export default{
+        props:{
+            items:{
+                type:Object,
+                required:true,
+            }
+        }
+    }
 </script>
 
 <template>
@@ -11,45 +18,21 @@
             </div>
         </div>
         <div class="row flex">
-            <div class="col-4 active">
-                <h4>High level of efficiency and scientific teaching methods</h4>
-                <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.</p>
+
+            <div class="col-4 active" v-for="item in items">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.text }}</p>
                 <div class="card">
                     <div>
-                        <img src="../../../public/testimonial-avata-03.jpg" alt="">
+                        <img :src=" item.image " alt="">
                     </div>
                     <div>
-                        <h5>MINA HOLLACE</h5>
-                        <p>/ Freelancer</p>
+                        <h5>{{item.name}}</h5>
+                        <p>{{ item.job }}</p>
                     </div>
                 </div>                
             </div>
-            <div class="col-4">
-                <h4>High level of efficiency and scientific teaching methods</h4>
-                <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.</p>
-                <div class="card">
-                    <div>
-                        <img src="../../../public/testimonial-avata-02.jpg" alt="">
-                    </div>
-                    <div>
-                        <h5>MINA HOLLACE</h5>
-                        <p>/ Freelancer</p>
-                    </div>
-                </div>              
-            </div>
-            <div class="col-4 active">
-                <h4>High level of efficiency and scientific teaching methods</h4>
-                <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.</p>
-                <div class="card">
-                    <div>
-                        <img src="../../../public/testimonial-avata-04.jpg" alt="">
-                    </div>
-                    <div>
-                        <h5>MINA HOLLACE</h5>
-                        <p>/ Freelancer</p>
-                    </div>
-                </div>            
-            </div>
+    
         </div>
 
         <div class="row">

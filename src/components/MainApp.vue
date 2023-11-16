@@ -89,7 +89,76 @@
                 
             ],
             topLearnes:[
-                
+                {
+                    image:'../../../public/testimonial-avata-04.jpg',
+                    title:'Its a choice of quality for people with special needs',
+                    text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
+                    name:'FLORENCE THEMES',
+                    job:'Multimedia Admin'
+                },
+                {
+                    image:'../../../public/testimonial-avata-03.jpg',
+                    title:'High level of efficiency and scientific teaching methods',
+                    text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
+                    name:'MINA HOLLACE',
+                    job:'Freelancer'
+                },
+                {
+                    image:'../../../public/testimonial-avata-02.jpg',
+                    title:'Professional team of specialists and passionate mentors at reach',
+                    text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
+                    name:'MADLEY PONDOR',
+                    job:'IT Specialist'
+                },
+            ],
+            tableNumber:[
+                {
+                    title:'Successfully',
+                    subtitle:' trained',      
+                    number:'1790',
+                    text:'ENROLLED LEARNERS'
+                },
+                {
+                    title:'Proudly',
+                    subtitle:'Received',         
+                    number:'19',
+                    text:'CONTRYWIDE AWARDS'
+                },
+                {
+                    title:'Firmly',
+                    subtitle:'Established',         
+                    number:'24',
+                    text:'LOCAL BRANCHES'
+                },
+                {
+                    title:'Getting',
+                    subtitle:'Featured on',         
+                    number:'1090',
+                    text:'BLOG POSTS'
+                },
+            ],
+            listElements:[
+                'Become a Better blogger: Content Planning',
+                'Promoting Your Online Business on Pinterest',
+                'Gamification and Game-Based Learning',
+                "Designing an Online Course from Expert's Perspective",
+                "Why Online Coursis are a Future of Education",
+            ],
+            cardMostViewed:[
+                {
+                    image:'../../../public/artist-blog-03-480x352.jpeg',
+                    job:'ARTIST',
+                    title:'Brush Strokes Enegize Trees in Paintings',
+                    date:'may 15, 2020',
+                    views:'688',
+                },
+                {
+                    image:'../../../public/artist-blog-01-480x352.jpg',
+                    job:'ARTIST',
+                    title:'Pocket-Sized Notebooks Hold Miniatyre Paintings',
+                    date:'may 15, 2020',
+                    views:'603',
+                }
             ]
         }
 		},
@@ -110,13 +179,13 @@
         <SectionMain3 :items="smartTuroring" />
     </section>
     <section class="section-4">
-        <SectionMain4/>
+        <SectionMain4 :items="topLearnes" />
     </section>
     <section class="section-5">
-        <SectionMain5/>
+        <SectionMain5 :items="tableNumber" />
     </section>
     <section class="section-6">
-        <SectionMain6/>
+        <SectionMain6 :items="listElements" :cards="cardMostViewed"/>
     </section>
     <section class="section-7">
         <SectionMain7/>

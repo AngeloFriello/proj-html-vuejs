@@ -1,5 +1,16 @@
 <script>
-
+    export default{
+        props:{
+            items:{
+                type:Object,
+                required:true,
+            },
+            cards:{
+                type:Object,
+                required:true,
+            }
+        }
+    }
 </script>
 
 <template>
@@ -7,86 +18,36 @@
         <div class="row flex">
 
             <div class="col-4">
-                <p class="small_text"> ENJOEBLE INSIGHTS</p>
+                <p class="small_text">ENJOEBLE INSIGHTS</p>
                 <h4 >Most Viewed <a href="" class="c_green f-w_light">Best Blogs</a></h4>
                 <ul>
-                    <li class="list_item flex">
+                    <li class="list_item flex" v-for="item in items">
                         <div>
                             <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
                         </div> 
                         <div>
-                            Become a Better blogger: Content Planning
-                        </div>
-                    </li>
-                    <li class="list_item flex">
-                        <div>
-                            <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
-                        </div> 
-                        <div>
-                            Promoting Your Online Business on Pinterest
-                        </div>
-                    </li>
-                    <li class="list_item flex">
-                        <div>
-                            <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
-                        </div> 
-                        <div>
-                            Gamification and Game-Based Learning
-                        </div>
-                    </li>
-                    <li class="list_item flex">
-                        <div>
-                            <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
-                        </div> 
-                        <div>
-                            Designing an Online Course from Expert's Perspective 
-                        </div>
-                    </li>
-                    <li class="list_item flex">
-                        <div>
-                            <font-awesome-icon :icon="['fas', 'arrow-right']" class="arrow-right" />
-                        </div> 
-                        <div>
-                            Why Online Coursis are a Future of Education
+                            {{ item }}
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="col-4" v-for="card in cards">
                 <div class="card">
                     <div class="card-body">
                         <div>
-                            <img src="../../../public/artist-blog-03-480x352.jpeg" alt="">
+                            <img :src="card.image" alt="">
                         </div>
                         <div class="card-footer">
-                            <p class="small_text">ARTIST</p>
-                            <h3>Brush Strokes Enegize Trees in Paintings </h3>
+                            <p class="small_text">{{card.job}}</p>
+                            <h3>{{card.title}}</h3>
                             <ul class="flex">
-                                <li><font-awesome-icon :icon="['far', 'calendar']" /> may 15, 2020 </li>
-                                <li><font-awesome-icon :icon="['far', 'eye']" /> 688 views</li>
+                                <li><font-awesome-icon :icon="['far', 'calendar']" /> {{  card.date  }} </li>
+                                <li><font-awesome-icon :icon="['far', 'eye']" /> {{ card.views }} views</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div>
-                            <img src="../../../public/artist-blog-01-480x352.jpg" alt="">
-                        </div>
-                        <div class="card-footer">
-                            <p class="small_text">ARTIST</p>
-                            <h3>Brush Strokes Enegize Trees in Paintings </h3>
-                            <ul class="flex">
-                                <li><font-awesome-icon :icon="['far', 'calendar']" /> may 15, 2020 </li>
-                                <li><font-awesome-icon :icon="['far', 'eye']" /> 688 views</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </template>
