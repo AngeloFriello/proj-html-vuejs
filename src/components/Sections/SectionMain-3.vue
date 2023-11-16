@@ -1,5 +1,12 @@
 <script>
-
+    export default{
+        props:{
+            items:{
+                type:Object,
+                required:true,
+            }
+        }
+    }
 </script>
 
 <template>
@@ -11,34 +18,14 @@
                 <h2>Access <a href="">Smart Tutoring</a> Program For Benefits.</h2>
             </div>
 
-            <div class="col-4">
+            <div class="col-4" v-for="item in items">
                 <div>
-                    <img src="../../../public/home-1.png" alt="">
+                    <img :src=" item.image " alt="">
                 </div>
                 <div>
-                    <h3>Customize Preferences</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At consectetur harum nam dolores adipisci deleniti alias eveniet culpa provident soluta!</p>
-                    <a href="">Start Here <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div>
-                    <img src="../../../public/home-2.png" alt="">
-                </div>
-                <div>
-                    <h3>Customize Preferences</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At consectetur harum nam dolores adipisci deleniti alias eveniet culpa provident soluta!</p>
-                    <a href="">Start Here <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div>
-                    <img src="../../../public/home-3.png" alt="">
-                </div>
-                <div>
-                    <h3>Customize Preferences</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At consectetur harum nam dolores adipisci deleniti alias eveniet culpa provident soluta!</p>
-                    <a href="">Start Here <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
+                    <h3>{{item.title}}</h3>
+                    <p>{{ item.text }}</p>
+                    <a href="">{{ item.link }} <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
                 </div>
             </div>
 
