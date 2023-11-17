@@ -42,7 +42,7 @@
             <img src="../../public/dark-logo.png" alt="" class="logo">
         </div>
         <ul class="flex">
-            <li class="nav-bar__item p-relative" v-for="(item, i) in items">{{item.name}}<font-awesome-icon :icon="['fas', 'chevron-down']" class="icon_chevron" @click="openDrop(item)"/>
+            <li class="nav-bar__item p-relative" v-for="(item, i) in items" @click="openDrop(item)" >{{item.name}}<font-awesome-icon :icon="['fas', 'chevron-down']" class="icon_chevron" />
                 <ul :class="item.visibility === true ? 'show-menu' : 'none'">
                     <li v-for="(drop, i) in dropDown" class="drop-item">{{ drop }}</li>
                 </ul>

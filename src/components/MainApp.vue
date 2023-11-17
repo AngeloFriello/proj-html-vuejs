@@ -103,7 +103,7 @@
                     text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
                     name:'MINA HOLLACE',
                     job:'Freelancer',
-                    visibility: true,
+                    visibility: false,
                 },
                 {
                     image:'../../../public/testimonial-avata-02.jpg',
@@ -113,6 +113,14 @@
                     job:'IT Specialist',
                     visibility: false,
                 },
+                {
+                    image:'../../../public/testimonial-avata-01.jpg',
+                    title:'Professional team of specialists and passionate mentors at reach',
+                    text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
+                    name:'MADLEY PONDOR',
+                    job:'IT Specialist',
+                    visibility: false,
+                }
             ],
             tableNumber:[
                 {
