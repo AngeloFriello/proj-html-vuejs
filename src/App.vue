@@ -15,7 +15,32 @@
 		},
 		data(){
 			return{
-				headerInp:['Home','Pages','Courses','Features','Blog','Shop',],
+				headerInp:[
+					{
+						name:'Home',
+						visibility: false,
+					},
+					{
+						name:'Pages',
+						visibility: false,
+					},
+					{
+						name:'Courses',
+						visibility: false,
+					},
+					{
+						name:'Features',
+						visibility: false,
+					},
+					{
+						name:'Blog',
+						visibility: false,
+					},
+					{
+						name:'Shop',
+						visibility: false,
+					},
+				],
 				footerInp:{
 					adress:'Adress',
 					id: '382 NE 191st St# 87394 Miami,FL 33179-3899',
@@ -37,7 +62,20 @@
 						'Privacy policy',
 						'Tearms of services'
 					],
-				}
+				},
+				dropDownHeader:[
+					'Start here',
+					'Success Story',
+					'About me',
+					'About us 01',
+					'About us 02',
+					'About us 03',
+					'Contact me',
+					'Contact us',
+					'Purchase Guide',
+					'Privacy Policy',
+					'Terms of Service',
+				]
 
 			}
 		},
@@ -49,7 +87,7 @@
 
 <template>
 	<header>
-		<HeaderApp :items="headerInp"/>
+		<HeaderApp :items="headerInp" :dropDown="dropDownHeader"/>
 	</header>
 	<main>
 		<MainApp/>

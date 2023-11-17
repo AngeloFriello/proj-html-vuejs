@@ -18,6 +18,20 @@ a{
 
 //utility
 
+.show-menu{
+    margin-top: 23px;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    color:#696969;
+    width: 170px;
+    z-index: 10;
+    border-bottom:4px solid #20AD96 ;
+
+}
+.drop-item{
+    padding : 10px 10px;
+    font-weight: 300;
+}
 
 .hover-green:hover{
     color: #20AD96 !important;
