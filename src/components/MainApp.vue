@@ -94,21 +94,24 @@
                     title:'Its a choice of quality for people with special needs',
                     text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
                     name:'FLORENCE THEMES',
-                    job:'Multimedia Admin'
+                    job:'Multimedia Admin',
+                    visibility: false,
                 },
                 {
                     image:'../../../public/testimonial-avata-03.jpg',
                     title:'High level of efficiency and scientific teaching methods',
                     text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
                     name:'MINA HOLLACE',
-                    job:'Freelancer'
+                    job:'Freelancer',
+                    visibility: true,
                 },
                 {
                     image:'../../../public/testimonial-avata-02.jpg',
                     title:'Professional team of specialists and passionate mentors at reach',
                     text:'I am free to learn at my own pace, follow my own schedule and choose the subject I want to ciao come stai ben stai domani ciao andiamo come stai  learn from the syllabus. Great study portal for people like me.',
                     name:'MADLEY PONDOR',
-                    job:'IT Specialist'
+                    job:'IT Specialist',
+                    visibility: false,
                 },
             ],
             tableNumber:[

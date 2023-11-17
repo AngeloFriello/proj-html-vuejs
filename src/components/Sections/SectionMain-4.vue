@@ -19,7 +19,7 @@
         </div>
         <div class="row flex">
 
-            <div class="col-4 active" v-for="item in items">
+            <div class="col-4" :class="item.visibility === false ? 'active' : 'ciro'" v-for="(item, i) in items">
                 <h4>{{ item.title }}</h4>
                 <p>{{ item.text }}</p>
                 <div class="card">

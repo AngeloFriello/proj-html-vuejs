@@ -12,6 +12,7 @@
 <template>
     <div class="container">
         <div class="row f-wrap">
+
             <div class="col-6">
                 <li class="title-list">{{ items.adress }}</li>
             </div>
@@ -24,6 +25,7 @@
             <div class="col-2">
                 <li class="title-list">Information</li>
             </div>
+            
             <div class="col-6">
                 <ul>
                     <li class="hover-green">{{ items.id }}</li>
