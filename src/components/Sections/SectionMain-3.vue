@@ -30,8 +30,11 @@
             </div>
 
             <div class="col-7 p-relative">
-                <img src="../../../public/youtube-background.jpg" alt="" class="img_background">
-                <img src="../../../public/youtube-logo.png" alt="" class="p-absolute logo_youtube">
+                <div class="p-relative">
+                    <img src="../../../public/youtube-background.jpg" alt="" class="img_background">
+                    <img src="../../../public/youtube-logo.png" alt="" class="p-absolute logo_youtube">
+                </div>
+
                 <img src="../../../public/maxcoach-shape-05.png" alt="" class="p-absolute img_left">
                 <img src="../../../public/maxcoach-shape-07.png" alt="" class="p-absolute img_right">
                 <img src="../../../public/cloud.svg" alt="" class="p-absolute img_cloud">

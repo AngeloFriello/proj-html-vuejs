@@ -21,7 +21,6 @@
 		},
 		methods:{
             openDrop(index){
-                let currentIndex = index
 
                 if(index.visibility === true){
                     console.log(index.visibility)
