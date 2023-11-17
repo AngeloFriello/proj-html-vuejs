@@ -32,22 +32,11 @@
             
         },
         methods:{
-            toggleImage1(){
+            toggleImage(index){
                 console.log(this.currentIndex)
-                return (this.currentIndex = 0)
+                return (this.currentIndex = index)
             },
-            toggleImage2(){
-                console.log(this.currentIndex)
-                return (this.currentIndex = 1)
-            },
-            toggleImage3(){
-                console.log(this.currentIndex)
-                return (this.currentIndex = 2)
-            },
-            toggleImage4(){
-                console.log(this.currentIndex)
-                return (this.currentIndex = 3)
-            },
+
             
         },
         
@@ -111,10 +100,8 @@
 
         <div class="row">
             <div class="col-3">
-                <div class="point" @click="toggleImage1()" :class="this.currentIndex == 0 ? 'point-active' : 'ciro'" ></div>
-                <div class="point" @click="toggleImage2()" :class="this.currentIndex == 1 ? 'point-active' : 'ciro'" ></div>
-                <div class="point" @click="toggleImage3()" :class="this.currentIndex == 2 ? 'point-active' : 'ciro'" ></div>
-                <div class="point" @click="toggleImage4()" :class="this.currentIndex == 3 ? 'point-active' : 'ciro'" ></div>
+                <div class="point" @click="toggleImage(i)" :class="this.currentIndex == i ? 'point-active' : 'ciro'" v-for="(point, i) in items"></div>
+
             </div>
         </div>
 
